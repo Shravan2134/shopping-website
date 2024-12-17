@@ -1,87 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
     font-family: Arial, sans-serif;
 }
 
-a{
-    color: black;
-    font-weight: 550;
-    text-decoration: none;
+body {
+    background-color: #f4f4f4; /* Light background for better contrast */
 }
 
-header{
+a {
+    color: #333; /* Darker color for better readability */
+    font-weight: 550;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    color: #806BDC; /* Change color on hover for links */
+}
+
+header {
     height: 60px;
     background-color: #806BDC;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.NavBar{
+.NavBar {
     padding-top: 18px;
 }
 
-#navbar-title{
+#navbar-title {
     color: white;
     font-size: 25px;
 }
 
-.Items{
+.Items {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-#item-table{
+#item-table {
     width: 100%;
     text-align: center;
 }
 
-.Item-img{
+.Item-img {
     height: 64px;
 }
 
-.Item-tag{
+.Item-tag {
     font-size: 14px;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.Item-tag:hover{
-    color: #806BDC;
+.Item-tag:hover {
+    color: #806BDC; /* Change color on hover */
 }
 
-.Shopping-container{
-    background-color: lightgrey;
+.Shopping-container {
+    background-color: #ffffff; /* White background for contrast */
     text-align: center;
     padding-bottom: 30px;
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-#shopping-time-img{
+#shopping-time-img {
     margin-top: 30px;
     width: 90vw;
-    height: 60vh;
+    height: auto; /* Maintain aspect ratio */
 }
 
-.Sales-table{
+.Sales-table {
     width: 90vw;
     margin: auto;
-    border: 1px solid grey;
     border-collapse: collapse;
-    padding: 12px;
 }
 
-.Sales-table-head{
+.Sales-table-head {
     background-color: #806BDC;
+    color: white; /* Ensure text is readable */
 }
 
-/* Update the code below this comment */
-.information{
+.Sales-table th,
+.Sales-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Subtle borders between rows */
+}
+
+.Sales-table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.information {
     width: 92vw;
-    margin: 20px;
+    margin: 20px auto; /* Center align the information section */
     font-size: 11px;
     color: #878787;
-    list-style-position:inside;
+    list-style-position: inside;
 }
-footer{
+
+footer {
     height: 50px;
-    padding: 28px;
+    padding-top: 12px; /* Adjusted padding for better alignment */
     background-color: black;
     color: white;
     text-align: center;
